@@ -1,0 +1,54 @@
+1. Basic Setup
+   - git config --global user.name "Your Name": Sets the name you want attached to your commit transactions.
+   - git config --global user.email "youremail@example.com": Sets the email you want attached to your commit transactions.
+   - git config --global color.ui auto: Enables helpful colorization of command line output.
+
+2. Starting a New Repository
+   - git init: Initializes a new Git repository.
+   - git clone [url]: Downloads a project and its entire version history.
+
+3. Basic Snapshotting
+   - git add [file]: Stages the file, ready to commit.
+   - git add .: Stages all changes in the current directory.
+   - git commit -m "Commit message": Commits the staged changes with a message.
+   - git status: Shows the working directory status.
+   - git log: Shows the commit history for the repository.
+   - git show [commit]: Shows details of a specific commit.
+   - git diff [source_branch] [target_branch]: Shows the differences between two branches.
+   - git diff: Shows the differences between the working directory and the staging area.
+
+4. Branching and Merging
+   - git branch: Lists all branches in the repository.
+   - git branch [branch-name]: Creates a new branch.
+   - git checkout [branch-name]: Switches to the specified branch.
+   - git merge [branch-name]: Merges the specified branch into the current branch.
+   - git branch -d [branch-name]: Deletes the specified branch.
+   - git checkout -b [branch-name]: Creates and switches to a new branch.
+
+5. Remote Repositories
+   - git remote add origin [url]: Adds a remote repository.
+   - git remote -v: Lists all remotes with their URLs.
+   - git push -u origin [branch-name]: Pushes the branch to the remote repository and sets the upstream branch.
+   - git push: Pushes the committed changes to the remote repository.
+   - git pull: Fetches and merges changes from the remote repository to the current branch.
+   - git fetch: Downloads objects and refs from another repository.
+
+6. Undoing Changes
+   - git reset --hard [commit]: Resets the working directory to the specified commit.
+   - git reset --soft [commit]: Resets the index to the specified commit, keeping the working directory changes.
+   - git revert [commit]: Reverts the specified commit.
+   - git checkout -- [file]: Discards changes in the working directory.
+   - git clean -f: Removes untracked files from the working directory.
+
+7. Stashing Changes
+   - git stash: Stashes changes in a dirty working directory away.
+   - git stash list: Lists all stashed changes.
+   - git stash apply [stash]: Applies the specified stash to the working directory.
+
+8. Advanced Git Commands
+   - git cherry-pick [commit]: Apply the changes introduced by some existing commits.
+   - git rebase [branch]: Reapply commits on top of another base tip.
+   - git reflog: Shows a log of changes to the local repository’s HEAD.
+   - git shortlog: Summarizes git log output.
+   - git describe: Gives the most recent tag reachable from a commit.
+   - git blame [file]: Shows who changed what and when in a file.
